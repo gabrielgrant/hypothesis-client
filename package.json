@@ -114,6 +114,9 @@
     ]
   },
   "main": "./build/boot.js",
+  "exports": {
+    "./src/": "./src/"
+  },
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build",
     "lint": "eslint --cache .",
